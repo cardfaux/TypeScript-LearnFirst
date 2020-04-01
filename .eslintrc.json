@@ -19,5 +19,12 @@
     "sourceType": "module" // Allows for the use of imports
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "rules": {
+    "no-console": "warn",
+    "no-empty": "off",
+    "no-empty-function": "off",
+    "no-proto": "error",
+    "no-redeclare": "error",
+    "require-await": "error"
+  }
 }
