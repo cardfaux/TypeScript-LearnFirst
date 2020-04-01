@@ -1,43 +1,51 @@
 {
-	"name": "learnfirst",
-	"version": "1.0.0",
-	"description": "Child Summer Learning System",
-	"main": "app.js",
-	"scripts": {
-		"dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
-		"build": "parcel build public/index.html --out-dir production --public-url ./",
-		"watch": "tsc --watch --noEmit"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cardfaux/TypeScript-LearnFirst.git"
-	},
-	"keywords": [
-		"TypeScript",
-		"Parcel"
-	],
-	"author": "James Hagood",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/cardfaux/TypeScript-LearnFirst/issues"
-	},
-	"homepage": "https://github.com/cardfaux/TypeScript-LearnFirst#readme",
-	"devDependencies": {
-		"@babel/core": "^7.9.0",
-		"@babel/plugin-transform-runtime": "^7.9.0",
-		"@babel/runtime-corejs2": "^7.9.2",
-		"parcel-bundler": "^1.12.4",
-		"typescript": "^3.8.3"
-	},
-	"browserslist": [
-		"last 2 Chrome versions",
-		"last 2 ChromeAndroid versions",
-		"last 2 Firefox versions",
-		"last 2 FirefoxAndroid versions",
-		"last 2 Safari versions",
-		"last 2 iOS versions",
-		"last 2 Edge versions",
-		"last 2 Opera versions",
-		"last 2 OperaMobile versions"
-	]
+  "name": "learnfirst",
+  "version": "1.0.0",
+  "description": "Child Summer Learning System",
+  "main": "app.js",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir production --public-url ./",
+    "watch": "tsc --watch --noEmit",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "onlyCheck": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cardfaux/TypeScript-LearnFirst.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Parcel"
+  ],
+  "author": "James Hagood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cardfaux/TypeScript-LearnFirst/issues"
+  },
+  "homepage": "https://github.com/cardfaux/TypeScript-LearnFirst#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ]
 }
