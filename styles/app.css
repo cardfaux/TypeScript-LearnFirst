@@ -8,31 +8,8 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: azure;
-}
-
-label,
-input,
-textarea {
-  display: block;
-  margin: 0.5rem 0;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
-  font: inherit;
-  padding: 0.2rem 0.4rem;
-  width: 100%;
-  border: 1px solid #ccc;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
 }
 
 button {
@@ -55,32 +32,35 @@ button:active {
 }
 
 .math-card {
-  width: 50%;
+  text-align: center;
+
+  width: 30rem;
   margin: 1rem auto;
   border: 1px solid #476c9b;
+  background-color: #f0efef;
+  margin: 10rem auto;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.math-card-header {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
 }
 
-#Finished-Chores {
-  border-color: #ef476f;
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 10px;
 }
 
-#Finished-Chores header {
-  background: #ef476f;
-}
-
-#Finished-Chores li h2 {
-  color: #ef476f;
-  text-decoration: line-through;
-}
-
-#Finished-Chores p {
-  color: #ccc;
-  border-bottom: 1px solid #1481ba;
-}
-
-#Finished-Chores .droppable {
-  background: #ef476f;
-  min-height: 10rem;
+.controls {
+  margin-bottom: 15px;
 }
 
 #user-selection {
@@ -90,22 +70,17 @@ button:active {
   background: #f0efef;
 }
 
-.chores li {
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.38);
-  padding: 1rem;
-  margin: 1rem;
-  background: white;
-}
-
-.droppable {
-  background: #ffe3ee;
-}
-
 .start-buttons {
   display: flex;
   width: 26%;
   align-items: center;
   justify-content: space-around;
+}
+
+.green {
+  background-color: darkmagenta;
+}
+
+.black {
+  background-color: darkorange;
 }

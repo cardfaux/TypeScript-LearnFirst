@@ -8,35 +8,37 @@
     <title>LearnFirst</title>
   </head>
   <body>
-    <!-- FORM FOR THE TEMPLATE START -->
+    <!-- DIV WITH BUTTONS TEMPLATE START -->
     <template id="subject-select">
       <div class="start-buttons">
         <button type="button" id="math">SIMPLE MATH</button>
         <button type="button" id="words">SIGHT WORDS</button>
       </div>
     </template>
-    <!-- FORM FOR THE TEMPLATE END -->
+    <!-- DIV WITH BUTTONS TEMPLATE END -->
 
-    <!-- LIST ITEM FOR CHORE ITEM TEMPLATE START -->
-    <template id="single-chore">
-      <li draggable="true">
-        <h2></h2>
-        <p></p>
-      </li>
-    </template>
-    <!-- LIST ITEM FOR CHORE ITEM TEMPLATE END -->
-
-    <!-- UNORDERED LIST FOR CHORE ITEMS TEMPLATE START -->
+    <!-- SECTION WITH BUTTON TEMPLATE START -->
     <template id="math-card">
-      <section class="math-card">
-        <button type="button" id="start-button">START SCREEN</button>
-      </section>
+      <div class="math-card">
+        <div class="math-card-header">
+          <h1 id="question"></h1>
+        </div>
+        <div id="answer-buttons" class="button-grid">
+          <button class="button">Answer #1</button>
+          <button class="button">Answer #2</button>
+          <button class="button">Answer #3</button>
+          <button class="button">Answer #4</button>
+        </div>
+        <div class="controls">
+          <button type="button" id="start-button">START SCREEN</button>
+          <button type="button" id="next-question">NEXT QUESTION</button>
+        </div>
+      </div>
     </template>
-    <!-- UNORDERED LIST FOR CHORE ITEMS TEMPLATE END -->
+    <!-- SECTION WITH BUTTON TEMPLATE END -->
 
     <!-- MAIN DIV TO INJECT THE OTHER TEMPLATES START -->
     <div id="app"></div>
     <!-- MAIN DIV TO INJECT THE OTHER TEMPLATES END -->
-    <div id="dec"></div>
   </body>
 </html>

@@ -34,7 +34,6 @@ export class StartGame {
   }
 
   private mathButtonHandler(): void {
-    console.log('MATH');
     this.element.remove();
     this.AddCard();
   }
